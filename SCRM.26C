@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float temp;
+    printf("Enter robot temperature (°C): ");
+    scanf("%f", &temp);
+
+    if (temp > 70)
+        printf( ALERT: Robot Overheated! Cooling down...\n");
+    else if (temp < 0)
+        printf("ALERT: Extremely Low Temperature!\n");
+    else
+        printf("Temperature Normal.\n");
+
+    return 0;
+}
