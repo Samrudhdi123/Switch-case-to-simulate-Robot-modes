@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int distance;
+    printf("Enter distance to obstacle (in cm): ");
+    scanf("%d", &distance);
+
+    if (distance < 20)
+        printf(" Obstacle Too Close! Stop Robot.\n");
+    else if (distance <= 50)
+        printf(" Slow Down, Obstacle Ahead.\n");
+    else
+        printf(" Path is Clear.\n");
+
+    return 0;
+}
