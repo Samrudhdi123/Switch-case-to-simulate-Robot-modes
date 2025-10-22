@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int path;
+    printf("Select Path (1=Short, 2=Safe, 3=Fast): ");
+    scanf("%d", &path);
+
+    switch (path) {
+        case 1: printf(" Short Path Selected.\n"); break;
+        case 2: printf(" Safe Path Selected.\n"); break;
+        case 3: printf(" Fast Path Selected.\n"); break;
+        default: printf("Invalid Path.\n");
+    }
+
+    return 0;
+}
