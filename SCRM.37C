@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int signal;
+    printf("Enter signal strength (0–100): ");
+    scanf("%d", &signal);
+
+    if (signal >= 80)
+        printf(" Strong Signal\n");
+    else if (signal >= 40)
+        printf("Medium Signal\n");
+    else
+        printf(" Weak Signal — Connection Lost\n");
+
+    return 0;
+}
