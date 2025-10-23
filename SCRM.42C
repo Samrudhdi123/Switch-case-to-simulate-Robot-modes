@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int strength;
+    printf("Enter Wi-Fi signal strength (0–100): ");
+    scanf("%d", &strength);
+
+    if (strength >= 70)
+        printf("Excellent Connection\n");
+    else if (strength >= 40)
+        printf("Moderate Connection\n");
+    else
+        printf("Weak Signal — Reconnect Needed\n");
+
+    return 0;
+}
