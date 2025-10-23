@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char sensor;
+    printf("Enter sensor input (L=Left, R=Right, C=Center): ");
+    scanf(" %c", &sensor);
+
+    switch (sensor) {
+        case 'L': case 'l': printf(" Adjust Right\n"); break;
+        case 'R': case 'r': printf(" Adjust Left\n"); break;
+        case 'C': case 'c': printf(" Stay Straight\n"); break;
+        default: printf(" Invalid Sensor Input\n");
+    }
+
+    return 0;
+}
