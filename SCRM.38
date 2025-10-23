@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char pass[10];
+    printf("Enter system password: ");
+    scanf("%s", pass);
+
+    if (strcmp(pass, "robot123") == 0) {
+        int mode;
+        printf("Access Granted! Select Mode (1=Manual, 2=Auto): ");
+        scanf("%d", &mode);
+        if (mode == 1)
+            printf("Manual Mode Activated.\n");
+        else if (mode == 2)
+            printf("Automatic Mode Activated.\n");
+        else
+            printf("Invalid Mode!\n");
+    } else {
+        printf("Access Denied!\n");
+    }
+
+    return 0;
+}
