@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int mode;
+    printf("Select Energy Mode (1=Eco, 2=Normal, 3=Turbo): ");
+    scanf("%d", &mode);
+
+    switch (mode) {
+        case 1: printf("Eco Mode: Power Saving Activated\n"); break;
+        case 2: printf("Normal Mode: Balanced Operation\n"); break;
+        case 3: printf(" Turbo Mode: Max Performance\n"); break;
+        default: printf("Invalid Mode\n");
+    }
+
+    return 0;
+}
