@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int load;
+    printf("Enter load weight (in kg): ");
+    scanf("%d", &load);
+
+    if (load < 20)
+        printf("Light Load — Normal Operation\n");
+    else if (load <= 50)
+        printf("Medium Load — Reducing Speed\n");
+    else
+        printf(" Heavy Load — Stop Operation!\n");
+
+    return 0;
+}
