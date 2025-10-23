@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float delay;
+    printf("Enter communication delay (in ms): ");
+    scanf("%f", &delay);
+
+    if (delay < 50)
+        printf("Signal Stable\n");
+    else if (delay <= 100)
+        printf(" Slight Delay Detected\n");
+    else
+        printf(" High Delay — Check Connection!\n");
+
+    return 0;
+}
