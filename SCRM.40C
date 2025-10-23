@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int leftSensor, rightSensor;
+    printf("Enter Left Sensor Distance (cm): ");
+    scanf("%d", &leftSensor);
+    printf("Enter Right Sensor Distance (cm): ");
+    scanf("%d", &rightSensor);
+
+    if (leftSensor < 20 && rightSensor < 20)
+        printf(" Obstacle Both Sides — Stop!\n");
+    else if (leftSensor < 20)
+        printf(" Turn Right to Avoid Obstacle.\n");
+    else if (rightSensor < 20)
+        printf("Turn Left to Avoid Obstacle.\n");
+    else
+        printf(" Path Clear. Move Forward.\n");
+
+    return 0;
+}
