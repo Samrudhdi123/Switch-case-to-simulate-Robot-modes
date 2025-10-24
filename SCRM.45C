@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int humidity;
+    printf("Enter humidity percentage: ");
+    scanf("%d", &humidity);
+
+    if (humidity > 80)
+        printf(" High Humidity — Activate Dryer.\n");
+    else if (humidity < 30)
+        printf(" Low Humidity — Add Moisture.\n");
+    else
+        printf(" Humidity Normal.\n");
+
+    return 0;
+}
