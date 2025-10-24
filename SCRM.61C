@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int temp, battery;
+    printf("Enter robot temperature (°C): ");
+    scanf("%d", &temp);
+    printf("Enter battery level (%%): ");
+    scanf("%d", &battery);
+
+    if (temp > 90 || battery < 10)
+        printf(" Auto Shutdown Initiated for Safety!\n");
+    else
+        printf("Systems Normal.\n");
+
+    return 0;
+}
