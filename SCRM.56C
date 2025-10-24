@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int errorCode;
+    printf("Enter robot error code (1–3): ");
+    scanf("%d", &errorCode);
+
+    switch (errorCode) {
+        case 1: printf("Motor Malfunction.\n"); break;
+        case 2: printf(" Low Battery Detected.\n"); break;
+        case 3: printf(" Sensor Error.\n"); break;
+        default: printf(" No Error Found.\n");
+    }
+
+    return 0;
+}
