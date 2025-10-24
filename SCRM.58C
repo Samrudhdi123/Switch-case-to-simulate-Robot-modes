@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int lightLevel;
+    printf("Enter light level (0–100): ");
+    scanf("%d", &lightLevel);
+
+    if (lightLevel < 40)
+        printf("Night Vision Mode Activated.\n");
+    else
+        printf(" Normal Vision Mode.\n");
+
+    return 0;
+}
