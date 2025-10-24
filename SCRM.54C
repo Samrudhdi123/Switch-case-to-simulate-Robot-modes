@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int fuel;
+    printf("Enter fuel level percentage: ");
+    scanf("%d", &fuel);
+
+    if (fuel < 20)
+        printf(" Low Fuel — Refuel Needed!\n");
+    else if (fuel < 50)
+        printf(" Medium Fuel.\n");
+    else
+        printf("Fuel Level OK.\n");
+
+    return 0;
+}
