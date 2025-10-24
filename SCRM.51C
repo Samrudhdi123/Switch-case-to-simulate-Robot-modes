@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int load;
+    printf("Enter current load (in kg): ");
+    scanf("%d", &load);
+
+    if (load > 100)
+        printf("Overload! Reduce Weight.\n");
+    else if (load >= 50)
+        printf("Moderate Load. Operate Carefully.\n");
+    else
+        printf("Safe Load.\n");
+
+    return 0;
+}
