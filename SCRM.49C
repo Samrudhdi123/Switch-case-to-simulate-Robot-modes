@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int light;
+    printf("Enter light intensity (0–100): ");
+    scanf("%d", &light);
+
+    if (light < 30)
+        printf(" Low Light — Turning ON Headlights.\n");
+    else if (light < 70)
+        printf(" Medium Light — Adjusting Brightness.\n");
+    else
+        printf(" Bright Light — Headlights OFF.\n");
+
+    return 0;
+}
