@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char pass[20];
+    printf("Enter robot access password: ");
+    scanf("%s", pass);
+
+    if (strcmp(pass, "ROBOT123") == 0)
+        printf(" Access Granted.\n");
+    else
+        printf(" Access Denied.\n");
+
+    return 0;
+}
